@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pinpad -->
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_GET_PIN_BLOCK" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_MAC" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_ENCRYPT_DATA" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_UPDATE_USER_KEY" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_UPDATE_MASTER_KEY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
